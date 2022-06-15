@@ -1,0 +1,13 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/*! Declares the REM value, 1 rem = 10 px */
+
+html {
+  font-size: 62.5%;
+}
