@@ -154,7 +154,7 @@ body {
   text-decoration: none;
   display: inline-block;
   border-bottom: 1px solid #55c57a;
-  padding: 3px;
+  padding: 5px 1rem;
   transition: all .2s; }
 
 .btn-text:hover {
@@ -172,7 +172,6 @@ body {
   .composition__photo {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-    border-radius: 2px;
     position: absolute;
     transition: all 0.2s;
     outline-offset: 2rem; }
@@ -192,6 +191,25 @@ body {
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: .3rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  transition: all .2s; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
 
 .header {
   height: 95vh;
@@ -225,21 +243,30 @@ body {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 2rem; }
+      margin-right: 6rem; }
   .row .col-1-of-2 {
-    width: calc((100% - 2rem) / 2); }
+    width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
-    width: calc((100% - 2rem * 2) / 3); }
+    width: calc((100% - 6rem * 2) / 3); }
   .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2rem * 2) / 3) + 2rem); }
+    width: calc(2 * ((100% - 6rem * 2) / 3) + 6rem); }
   .row .col-1-of-4 {
-    width: calc((100% - 2rem * 3) / 4); }
+    width: calc((100% - 6rem * 3) / 4); }
   .row .col-2-of-4 {
-    width: calc((2 * (100% - 2rem * 3) / 4) + 2rem); }
+    width: calc((2 * (100% - 6rem * 3) / 4) + 6rem); }
   .row .col-3-of-4 {
-    width: calc((3 * (100% - 2rem * 3) / 4) + 2 * 2rem); }
+    width: calc((3 * (100% - 6rem * 3) / 4) + 2 * 6rem); }
 
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -13rem; }
+  .section-features > * {
+    transform: skewY(7deg); }
