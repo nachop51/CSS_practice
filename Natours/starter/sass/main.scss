@@ -1,13 +1,15 @@
-@import "abstracts/_functions";
-@import "abstracts/_mixins";
-@import "abstracts/_variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-@import "base/_animations";
-@import "base/_base";
-@import "base/_typography";
-@import "base/_utilities";
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-@import "components/_button";
-@import "layout/_header";
-@import "layout/_grid";
-@import "pages/_home";
+@import "components/button";
+@import "components/composition";
+
+@import "layout/header";
+@import "layout/grid";
+@import "pages/home";
