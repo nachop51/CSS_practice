@@ -17,6 +17,36 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">MENU</label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">
+              <span>01</span>About Natours
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">
+              <span>02</span>Your benefits
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">
+              <span>03</span>Popular tours
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"> <span>04</span>Stories </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"> <span>05</span>Book now </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <header class="header">
       <div class="header__logo-box">
         <img src="img/logo-white.png" alt="Logo" class="header__logo" />
@@ -87,9 +117,8 @@
                 Explore the world
               </h3>
               <p class="feature-box__text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat quam vero accusantium dolores ratione libero deserunt
-                obcaecati perspiciatis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam, ipsum sapiente aspernatur.
               </p>
             </div>
           </div>
@@ -100,9 +129,8 @@
                 Meet nature
               </h3>
               <p class="feature-box__text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat quam vero accusantium dolores ratione libero deserunt
-                obcaecati perspiciatis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam, ipsum sapiente aspernatur.
               </p>
             </div>
           </div>
@@ -113,9 +141,8 @@
                 Find your way
               </h3>
               <p class="feature-box__text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat quam vero accusantium dolores ratione libero deserunt
-                obcaecati perspiciatis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam, ipsum sapiente aspernatur.
               </p>
             </div>
           </div>
@@ -126,9 +153,8 @@
                 Live a healthier life
               </h3>
               <p class="feature-box__text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat quam vero accusantium dolores ratione libero deserunt
-                obcaecati perspiciatis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam, ipsum sapiente aspernatur.
               </p>
             </div>
           </div>
@@ -262,10 +288,11 @@
                 I had the best week ever with my family
               </h3>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
-                pariatur minus quibusdam. Corporis ipsa nemo facilis, in eos
-                adipisci tempora optio itaque illum ullam, natus, officia
-                repellendus sit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam, ipsum sapiente aspernatur libero repellat quis
+                consequatur ducimus quam nisi exercitationem omnis earum qui.
+                Aperiam, ipsum sapiente aspernatur libero repellat quis
+                consequatur ducimus quam nisi exercitationem omnis earum qui.
               </p>
             </div>
           </div>
@@ -285,10 +312,11 @@
                 WOW! My life is completely different now
               </h3>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
-                pariatur minus quibusdam. Corporis ipsa nemo facilis, in eos
-                adipisci tempora optio itaque illum ullam, natus, officia
-                repellendus sit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam, ipsum sapiente aspernatur libero repellat quis
+                consequatur ducimus quam nisi exercitationem omnis earum qui.
+                Aperiam, ipsum sapiente aspernatur libero repellat quis
+                consequatur ducimus quam nisi exercitationem omnis earum qui.
               </p>
             </div>
           </div>
@@ -297,8 +325,107 @@
           <a href="#" class="btn-text">Read all stories &rarr;</a>
         </div>
       </section>
+      <section class="section-booking">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <form action="" class="form">
+                <h2 class="heading-secondary u-margin-bottom-medium">
+                  Start booking now
+                </h2>
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Full Name"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form__label">Full Name</label>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Email Address"
+                    id="email"
+                    required
+                  />
+                  <label for="email" class="form__label">Email Address</label>
+                </div>
+                <div class="form__group u-margin-bottom-medium">
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="small"
+                      name="size"
+                    />
+                    <label for="small" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Small tour group
+                    </label>
+                  </div>
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="large"
+                      name="size"
+                    />
+                    <label for="large" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Large tour group
+                    </label>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <button class="btn btn--green">Next step &rarr;</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo" />
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Carrers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Built by <a href="#" class="footer__link">Nacho Peralta</a>
+            lorem ipsum dolor sit amet consectetur adipisicing elit. &copy;
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
+            perferendis non accusantium perspiciatis soluta reprehenderit culpa
+            excepturi temporibus ipsa iste eum aliquam dicta, voluptas hic,
+            voluptatum fugit ipsam odio quas?
+          </p>
+        </div>
+      </div>
+    </footer>
     <!--  
     <section class="grid-test">
       <div class="row">

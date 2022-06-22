@@ -8,6 +8,7 @@
   padding-left: 9rem;
   font-size: $default-font-size;
   transform: skewX(-12deg);
+  backface-visibility: hidden !important;
 
   &__shape {
     width: 15rem;
