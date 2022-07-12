@@ -1,3 +1,22 @@
+/*
+Important queries
+
+0 - 600px:          Phone
+600px - 900px:      Tablet portrait
+900px - 1200px:     Tablet landscape
+[1200px - 1800px]:  Desktop (Normal development)
+1800 + :            Big desktop
+
+$Breakpoints: (
+  phone: 600px,
+  tablet-portrait: 900px,
+  tablet-landscape: 1200px,
+  big-desktop: 2400px
+);
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -36,6 +55,18 @@
 /*! Declares the REM value, 1 rem = 10 px */
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 30%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: "Lato", sans-serif;
