@@ -20,10 +20,18 @@ html {
   }
 
   @include respond(phone) {
-    font-size: 30%;
+    font-size: 40%;
   }
 
   @include respond(big-desk) {
     font-size: 75%;
+  }
+}
+
+body {
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
   }
 }
