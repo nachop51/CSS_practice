@@ -791,6 +791,10 @@ body {
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%); }
+  @media (max-width: 56.25em) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 80vh, 0% 100%); } }
   @media (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);
@@ -909,7 +913,10 @@ body {
   margin-top: -20vh; }
   @media (max-width: 56.25em) {
     .section-about {
-      padding: 25rem 0 20rem; } }
+      padding: 30rem 0 20rem; } }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding: 40rem 0 20rem; } }
 
 .section-features {
   padding: 20rem 0;
