@@ -69,6 +69,13 @@ body {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: .5rem 1rem 2rem rgba($color: #000000, $alpha: 0.3);
   }
+
+  @include respond(tab-port) {
+    &:hover {
+      position: relative;
+      transform: skewY(0) skewX(0);
+    }
+  }
 }
 
 .heading-tertiary {

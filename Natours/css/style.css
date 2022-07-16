@@ -131,6 +131,10 @@ body {
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3); }
+  @media (max-width: 56.25em) {
+    .heading-secondary:hover {
+      position: relative;
+      transform: skewY(0) skewX(0); } }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -914,9 +918,6 @@ body {
   @media (max-width: 56.25em) {
     .section-about {
       padding: 30rem 0 20rem; } }
-  @media (max-width: 56.25em) {
-    .section-about {
-      padding: 40rem 0 20rem; } }
 
 .section-features {
   padding: 20rem 0;
