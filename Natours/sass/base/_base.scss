@@ -6,7 +6,7 @@
   box-sizing: inherit;
 }
 
-/*! Declares the REM value, 1 rem = 10 px */
+/* Declares the REM value, 1 rem = 10 px */
 
 html {
   font-size: 62.5%;
@@ -34,4 +34,9 @@ body {
   @include respond(tab-port) {
     padding: 0;
   }
+}
+
+::selection {
+  background-color: rgba($color: $color-primary, $alpha: .75);
+  color: $color-white;
 }
