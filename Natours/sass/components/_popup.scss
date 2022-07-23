@@ -10,6 +10,11 @@
   transition: all .3s;
   visibility: hidden;
 
+  @supports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba($color: #000000, $alpha: .3);
+  }
 
   &__content {
     @include absoulte_center;
